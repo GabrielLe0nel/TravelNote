@@ -1,0 +1,39 @@
+Trabalho Final — Desenvolvimento para Dispositivos Móveis
+Modalidade: Grupos de até 4 estudantes
+Entrega e apresentação: 09/11/2026
+Valor: 10 pontos
+
+Objetivo
+Desenvolver uma aplicação móvel de tema livre que integre os conhecimentos adquiridos durante a Unidade Curricular.
+
+Requisitos obrigatórios
+A aplicação deverá implementar:
+
+View customizada: componente gráfico desenvolvido pelo grupo.
+
+Banco de dados: armazenamento e recuperação de informações utilizando SQLite, Firebase, Cloudflare D1 ou outra tecnologia.
+
+Geolocalização: utilização da localização geográfica do dispositivo.
+
+Sensores: leitura e utilização de dados de pelo menos um sensor do dispositivo (acelerômetro, giroscópio, magnetômetro, luminosidade etc.).
+
+Exemplos de aplicações
+Monitor de sensores: leitura do acelerômetro, giroscópio ou magnetômetro, com representação gráfica customizada e armazenamento dos dados associados à localização.
+
+Chat com localização: troca de mensagens entre usuários, compartilhamento da localização e funcionalidades baseadas em sensores.
+
+Monitor de atividades: registro de trajetos e movimentações utilizando GPS e sensores, com histórico e indicadores gráficos.
+
+Os exemplos são apenas sugestões. Cada grupo poderá propor sua própria aplicação, desde que contemple os requisitos obrigatórios.
+
+Avaliação
+Critério	Pontuação
+Funcionamento geral da aplicação	2,0
+View customizada	1,0
+Banco de dados	1,0
+Geolocalização	1,0
+Sensores	1,0
+Organização do código e documentação	1,0
+Apresentação do projeto	1,0
+GitHub Actions ou similar (compilação automática e geração do APK)	2,0
+Total	10,0

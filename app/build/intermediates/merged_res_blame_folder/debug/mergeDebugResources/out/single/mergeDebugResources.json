@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "br.com.travelnote.app-debug-4:/mipmap-anydpi_ic_travelnote.xml.flat",
+        "source": "br.com.travelnote.app-main-6:/mipmap-anydpi/ic_travelnote.xml"
+    },
+    {
+        "merged": "br.com.travelnote.app-debug-4:/layout_activity_map.xml.flat",
+        "source": "br.com.travelnote.app-main-6:/layout/activity_map.xml"
+    },
+    {
+        "merged": "br.com.travelnote.app-debug-4:/layout_activity_detalhes.xml.flat",
+        "source": "br.com.travelnote.app-main-6:/layout/activity_detalhes.xml"
+    },
+    {
+        "merged": "br.com.travelnote.app-debug-4:/xml_data_extraction_rules.xml.flat",
+        "source": "br.com.travelnote.app-main-6:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "br.com.travelnote.app-debug-4:/layout_activity_editor.xml.flat",
+        "source": "br.com.travelnote.app-main-6:/layout/activity_editor.xml"
+    },
+    {
+        "merged": "br.com.travelnote.app-debug-4:/drawable_ic_mountains_mark.xml.flat",
+        "source": "br.com.travelnote.app-main-6:/drawable/ic_mountains_mark.xml"
+    },
+    {
+        "merged": "br.com.travelnote.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "br.com.travelnote.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "br.com.travelnote.app-debug-4:/xml_backup_rules.xml.flat",
+        "source": "br.com.travelnote.app-main-6:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "br.com.travelnote.app-debug-4:/drawable_input_bg.xml.flat",
+        "source": "br.com.travelnote.app-main-6:/drawable/input_bg.xml"
+    },
+    {
+        "merged": "br.com.travelnote.app-debug-4:/layout_item_memory_card.xml.flat",
+        "source": "br.com.travelnote.app-main-6:/layout/item_memory_card.xml"
+    }
+]

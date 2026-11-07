@@ -1,0 +1,86 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="br.com.travelnote"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:2:5-79
+11-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:2:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:3:5-81
+12-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:3:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:4:5-67
+13-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:4:22-64
+14
+15    <uses-feature
+15-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:5:5-95
+16        android:name="android.hardware.sensor.barometer"
+16-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:5:19-67
+17        android:required="false" />
+17-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:5:68-92
+18
+19    <application
+19-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:5-16:19
+20        android:allowBackup="true"
+20-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:156-182
+21        android:dataExtractionRules="@xml/data_extraction_rules"
+21-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:229-285
+22        android:debuggable="true"
+23        android:extractNativeLibs="false"
+24        android:fullBackupContent="@xml/backup_rules"
+24-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:183-228
+25        android:icon="@mipmap/ic_travelnote"
+25-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:77-113
+26        android:label="TravelNote"
+26-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:50-76
+27        android:roundIcon="@mipmap/ic_travelnote"
+27-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:114-155
+28        android:supportsRtl="true"
+28-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:286-312
+29        android:testOnly="true"
+30        android:theme="@style/AppTheme" >
+30-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:18-49
+31        <activity
+31-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:7:9-77
+32            android:name="br.com.travelnote.EditorActivity"
+32-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:7:19-49
+33            android:exported="false" />
+33-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:7:50-74
+34        <activity
+34-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:8:9-77
+35            android:name="br.com.travelnote.DetailActivity"
+35-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:8:19-49
+36            android:exported="false" />
+36-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:8:50-74
+37        <activity
+37-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:9:9-74
+38            android:name="br.com.travelnote.MapActivity"
+38-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:9:19-46
+39            android:exported="false" />
+39-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:9:47-71
+40        <activity
+40-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:10:9-15:20
+41            android:name="br.com.travelnote.MainActivity"
+41-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:10:19-47
+42            android:exported="true" >
+42-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:10:48-71
+43            <intent-filter>
+43-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:11:13-14:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:12:17-69
+44-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:12:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:13:17-77
+46-->C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:13:27-74
+47            </intent-filter>
+48        </activity>
+49    </application>
+50
+51</manifest>

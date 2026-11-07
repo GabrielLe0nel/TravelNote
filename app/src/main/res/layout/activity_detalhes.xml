@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" tools:context=".DetailActivity">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:paddingStart="22dp" android:paddingTop="24dp" android:paddingEnd="22dp" android:paddingBottom="30dp" android:background="@color/cream">
+        <TextView android:id="@+id/back_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="‹   Caderno" android:textColor="@color/sage_dark" android:textSize="16sp" android:clickable="true" android:focusable="true" />
+        <TextView android:id="@+id/detail_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:textColor="@color/muted" android:textSize="13sp" />
+        <TextView android:id="@+id/detail_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="@color/ink" android:textSize="30sp" android:textStyle="bold" />
+        <ImageView android:id="@+id/detail_photo" android:layout_width="match_parent" android:layout_height="220dp" android:layout_marginTop="20dp" android:scaleType="centerCrop" android:visibility="gone" android:contentDescription="Foto da memória" />
+        <TextView android:id="@+id/detail_story" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:lineSpacingExtra="5dp" android:textColor="#FF38443B" android:textSize="17sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="DETALHES DO LOCAL" android:textColor="@color/sage_dark" android:textSize="12sp" android:textStyle="bold" />
+        <TextView android:id="@+id/detail_location" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="@color/sage_dark" android:textSize="14sp" />
+        <TextView android:id="@+id/detail_pressure" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="@color/sage_dark" android:textSize="14sp" android:visibility="gone" />
+        <Button android:id="@+id/button_open_map" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="12dp" android:backgroundTint="#E5EBE1" android:text="Abrir local no mapa" android:textAllCaps="false" android:textColor="@color/sage_dark" android:visibility="gone" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="24dp" android:orientation="horizontal">
+            <Button android:id="@+id/button_edit_memory" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:backgroundTint="@color/sage" android:text="Editar" android:textAllCaps="false" android:textColor="@color/white" />
+            <Button android:id="@+id/button_delete_memory" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginStart="10dp" android:layout_weight="1" android:backgroundTint="#F1E5DF" android:text="Excluir" android:textAllCaps="false" android:textColor="#FF8A5148" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

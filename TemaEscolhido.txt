@@ -1,0 +1,42 @@
+TravelNote – Caderno de Notas / Diário de Viagem Geolocalizado
+Tema escolhido: Desenvolvimento de um aplicativo móvel de anotações e diário de viagens, no qual o usuário poderá registrar momentos, experiências e lembranças, vinculando cada anotação à localização geográfica e à pressão atmosférica medida no momento da criação.
+
+O aplicativo será desenvolvido para Android utilizando Java e Android Studio, com interface moderna em tons de verde-sálvia e bege.
+
+Funcionalidades e requisitos obrigatórios
+- View Customizada: Desenvolvimento de um componente gráfico próprio chamado MemoryCardView, com cartões de memória personalizados, cantos arredondados e informações de localização.
+
+- Banco de Dados: Utilização do SQLite para armazenar e recuperar as anotações, incluindo título, descrição, foto (opcional), latitude, longitude, data, horário e pressão atmosférica opcional.
+
+- Geolocalização: Captura automática da localização do dispositivo no momento da criação da anotação, armazenando latitude e longitude e permitindo visualizar o local registrado.
+
+- Sensores: Utilização do barômetro do dispositivo (`Sensor.TYPE_PRESSURE`) para medir e registrar a pressão atmosférica em hPa junto à anotação. O recurso é opcional quando o aparelho não possui esse sensor.
+
+Principais telas do aplicativo
+Início: Apresentação do aplicativo e das memórias recentes, com botão para criar uma nova anotação.
+
+Nova memória: Formulário para inserir título, descrição e foto, capturando automaticamente a localização e a leitura do barômetro quando disponível.
+
+Detalhes da memória: Exibição completa da anotação, incluindo data, localização e pressão atmosférica registrada.
+
+Histórico: Listagem das anotações salvas, com opções de pesquisa, edição e exclusão.
+
+Tecnologias utilizadas
+Android Studio e Java.
+
+XML para construção das interfaces.
+
+SQLite para armazenamento dos dados.
+
+GPS para geolocalização.
+
+Barômetro do dispositivo.
+
+Canvas e Custom View para o componente gráfico personalizado.
+
+GitHub Actions para compilação automática e geração do APK.
+
+Objetivo do projeto
+Desenvolver um diário digital de viagens e experiências que permita registrar memórias de forma organizada e personalizada, associando cada anotação ao local e à pressão atmosférica do momento, integrando os conhecimentos de desenvolvimento mobile, banco de dados, geolocalização, sensores e interfaces gráficas customizadas.
+
+Diferencial: O TravelNote transforma simples anotações em registros de experiências geolocalizadas, permitindo que o usuário reviva suas memórias com informações sobre onde foram registradas e qual era a pressão atmosférica no local.
