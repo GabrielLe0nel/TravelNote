@@ -1,28 +1,41 @@
 name: Build and Generate APK
+
 on:
   push:
     branches: [ "main", "master" ]
-  workflow_dispatch: # Habilita um botão para você rodar a action manualmente quando quiser
+  workflow_dispatch:
+
+# Permissão obrigatória para a Action conseguir criar a página de download
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: 📥 Clonar o repositório
         uses: actions/checkout@v4
+
       - name: ☕ Configurar Java (JDK 17)
         uses: actions/setup-java@v4
         with:
-          java-version: '17' # Se seu projeto for mais antigo, mude para '11'
+          java-version: '17'
           distribution: 'temurin'
           cache: gradle
+
       - name: 🔐 Dar permissão de execução ao Gradle
         run: chmod +x ./gradlew
+
       - name: ⚙️ Gerar o APK (Modo Debug)
         run: ./gradlew assembleDebug
-      - name: 🚀 Disponibilizar APK para Download
-        uses: actions/upload-artifact@v4
+
+      - name: 🚀 Criar Botão de Download (Release)
+        uses: ncipollo/release-action@v1
         with:
-          name: TravelNote-APK
-          # Os asteriscos garantem que a action vai capturar o APK independentemente da pasta exata
-          path: app/build/outputs/apk/**/*.apk
+          artifacts: "app/build/outputs/apk/**/*.apk"
+          tag: "latest"
+          name: "Versão mais recente"
+          body: "Baixe o arquivo .apk logo abaixo na seção Assets para instalar."
+          allowUpdates: true # Garante que vai sempre substituir pelo APK mais novo
+          token: ${{ secrets.GITHUB_TOKEN }}

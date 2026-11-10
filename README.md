@@ -48,3 +48,8 @@ A permissão de localização é solicitada ao criar uma nota. Se a permissão f
 ## Banco de dados
 
 O SQLite armazena título, descrição, URI opcional da foto, latitude, longitude, nome do local, data/hora e pressão atmosférica opcional. A migração mantém as notas existentes e acrescenta o valor do barômetro ao esquema.
+
+
+## Download
+
+[![Baixar APK](https://img.shields.io/badge/Baixar_App-APK-green?style=for-the-badge&logo=android)](https://github.com/liviaMMachado/TravelNote/releases/latest)
