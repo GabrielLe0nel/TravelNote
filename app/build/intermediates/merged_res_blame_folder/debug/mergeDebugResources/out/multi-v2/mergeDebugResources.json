@@ -4,7 +4,7 @@
             "outputFile": "br.com.travelnote.app-debug-4:/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\livia\\OneDrive\\Desktop\\DispositivosMoveis\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "/home/gab-leonel/StudioProjects/TravelNote/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,4,5,1,2,6,7",
                         "startColumns": "4,4,4,4,4,4,4",

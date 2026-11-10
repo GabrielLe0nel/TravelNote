@@ -1,95 +1,95 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:1:1-17:12
-INJECTED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:1:1-17:12
-INJECTED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:1:1-17:12
-INJECTED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:1:1-17:12
+ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:1:1-17:12
+INJECTED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:1:1-17:12
+INJECTED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:1:1-17:12
+INJECTED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:1:1-17:12
 	package
-		INJECTED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml
+		INJECTED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml
+		INJECTED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml
+		INJECTED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:2:5-79
+ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:2:5-79
 	android:name
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:2:22-76
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:2:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:3:5-81
+ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:3:5-81
 	android:name
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:3:22-78
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:3:22-78
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:4:5-67
+ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:4:22-64
 uses-feature#android.hardware.sensor.barometer
-ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:5:5-95
+ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:5:5-95
 	android:required
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:5:68-92
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:5:68-92
 	android:name
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:5:19-67
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:5:19-67
 application
-ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:5-16:19
-INJECTED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:5-16:19
+ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:5-16:19
+INJECTED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:5-16:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml
+		INJECTED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml
 	android:supportsRtl
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:286-312
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:286-312
 	android:label
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:50-76
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:50-76
 	android:fullBackupContent
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:183-228
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:183-228
 	android:roundIcon
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:114-155
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:114-155
 	android:icon
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:77-113
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:77-113
 	android:allowBackup
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:156-182
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:156-182
 	android:theme
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:18-49
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:18-49
 	android:dataExtractionRules
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:6:229-285
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:229-285
 activity#br.com.travelnote.EditorActivity
-ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:7:9-77
+ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:7:9-77
 	android:exported
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:7:50-74
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:7:50-74
 	android:name
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:7:19-49
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:7:19-49
 activity#br.com.travelnote.DetailActivity
-ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:8:9-77
+ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:8:9-77
 	android:exported
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:8:50-74
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:8:50-74
 	android:name
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:8:19-49
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:8:19-49
 activity#br.com.travelnote.MapActivity
-ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:9:9-74
+ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:9:9-74
 	android:exported
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:9:47-71
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:9:47-71
 	android:name
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:9:19-46
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:9:19-46
 activity#br.com.travelnote.MainActivity
-ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:10:9-15:20
+ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:10:9-15:20
 	android:exported
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:10:48-71
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:10:48-71
 	android:name
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:10:19-47
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:10:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:11:13-14:29
+ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:11:13-14:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:12:17-69
+ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:12:17-69
 	android:name
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:12:25-66
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:12:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:13:17-77
+ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:13:17-77
 	android:name
-		ADDED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml:13:27-74
+		ADDED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:13:27-74
 uses-sdk
-INJECTED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml
+INJECTED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml
+INJECTED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml
+		INJECTED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\AndroidManifest.xml
+		INJECTED from /home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml

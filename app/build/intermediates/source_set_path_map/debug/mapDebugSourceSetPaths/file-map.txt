@@ -1,8 +1,8 @@
-br.com.travelnote.app-pngs-0 C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\build\generated\res\pngs\debug
-br.com.travelnote.app-resValues-1 C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\build\generated\res\resValues\debug
-br.com.travelnote.app-updated_navigation_xml-2 C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\build\generated\updated_navigation_xml\debug
-br.com.travelnote.app-packageDebugResources-3 C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-br.com.travelnote.app-packageDebugResources-4 C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-br.com.travelnote.app-debug-5 C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\build\intermediates\merged_res\debug\mergeDebugResources
-br.com.travelnote.app-debug-6 C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\debug\res
-br.com.travelnote.app-main-7 C:\Users\livia\OneDrive\Desktop\DispositivosMoveis\app\src\main\res
+br.com.travelnote.app-pngs-0 /home/gab-leonel/StudioProjects/TravelNote/app/build/generated/res/pngs/debug
+br.com.travelnote.app-resValues-1 /home/gab-leonel/StudioProjects/TravelNote/app/build/generated/res/resValues/debug
+br.com.travelnote.app-updated_navigation_xml-2 /home/gab-leonel/StudioProjects/TravelNote/app/build/generated/updated_navigation_xml/debug
+br.com.travelnote.app-packageDebugResources-3 /home/gab-leonel/StudioProjects/TravelNote/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+br.com.travelnote.app-packageDebugResources-4 /home/gab-leonel/StudioProjects/TravelNote/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+br.com.travelnote.app-debug-5 /home/gab-leonel/StudioProjects/TravelNote/app/build/intermediates/merged_res/debug/mergeDebugResources
+br.com.travelnote.app-debug-6 /home/gab-leonel/StudioProjects/TravelNote/app/src/debug/res
+br.com.travelnote.app-main-7 /home/gab-leonel/StudioProjects/TravelNote/app/src/main/res

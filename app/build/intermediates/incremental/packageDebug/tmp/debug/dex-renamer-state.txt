@@ -1,6 +1,6 @@
-#Fri Nov 06 22:06:49 GMT-03:00 2026
-base.0=C\:\\Users\\livia\\OneDrive\\Desktop\\DispositivosMoveis\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.1=C\:\\Users\\livia\\OneDrive\\Desktop\\DispositivosMoveis\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+#Fri Nov 13 10:26:20 GMT-03:00 2026
+base.0=/home/gab-leonel/StudioProjects/TravelNote/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.1=/home/gab-leonel/StudioProjects/TravelNote/app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex
 path.0=0/classes.dex
 path.1=2/classes.dex
 renamed.0=classes.dex
