@@ -43,44 +43,43 @@
 27-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:114-155
 28        android:supportsRtl="true"
 28-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:286-312
-29        android:testOnly="true"
-30        android:theme="@style/AppTheme" >
-30-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:18-49
-31        <activity
-31-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:7:9-77
-32            android:name="br.com.travelnote.EditorActivity"
-32-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:7:19-49
-33            android:exported="false" />
-33-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:7:50-74
-34        <activity
-34-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:8:9-77
-35            android:name="br.com.travelnote.DetailActivity"
-35-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:8:19-49
-36            android:exported="false" />
-36-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:8:50-74
-37        <activity
-37-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:9:9-74
-38            android:name="br.com.travelnote.MapActivity"
-38-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:9:19-46
-39            android:exported="false" />
-39-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:9:47-71
-40        <activity
-40-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:10:9-15:20
-41            android:name="br.com.travelnote.MainActivity"
-41-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:10:19-47
-42            android:exported="true" >
-42-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:10:48-71
-43            <intent-filter>
-43-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:11:13-14:29
-44                <action android:name="android.intent.action.MAIN" />
-44-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:12:17-69
-44-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:12:25-66
-45
-46                <category android:name="android.intent.category.LAUNCHER" />
-46-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:13:17-77
-46-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:13:27-74
-47            </intent-filter>
-48        </activity>
-49    </application>
-50
-51</manifest>
+29        android:theme="@style/AppTheme" >
+29-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:6:18-49
+30        <activity
+30-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:7:9-77
+31            android:name="br.com.travelnote.EditorActivity"
+31-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:7:19-49
+32            android:exported="false" />
+32-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:7:50-74
+33        <activity
+33-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:8:9-77
+34            android:name="br.com.travelnote.DetailActivity"
+34-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:8:19-49
+35            android:exported="false" />
+35-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:8:50-74
+36        <activity
+36-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:9:9-74
+37            android:name="br.com.travelnote.MapActivity"
+37-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:9:19-46
+38            android:exported="false" />
+38-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:9:47-71
+39        <activity
+39-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:10:9-15:20
+40            android:name="br.com.travelnote.MainActivity"
+40-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:10:19-47
+41            android:exported="true" >
+41-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:10:48-71
+42            <intent-filter>
+42-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:11:13-14:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:12:17-69
+43-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:12:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:13:17-77
+45-->/home/gab-leonel/StudioProjects/TravelNote/app/src/main/AndroidManifest.xml:13:27-74
+46            </intent-filter>
+47        </activity>
+48    </application>
+49
+50</manifest>

@@ -2,6 +2,7 @@ package br.com.travelnote;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Sensor;
@@ -12,7 +13,9 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.widget.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -21,6 +24,8 @@ import java.util.Locale;
 public class EditorActivity extends Activity implements SensorEventListener {
     private static final int REQUEST_LOCATION=41, REQUEST_PHOTO=42;
     private EditText title,description; private TextView place,pressureLabel,photoLabel; private Double latitude,longitude; private Float pressureHpa; private String photoUri,locationName; private long editId; private MemoryDatabase db; private LocationManager locationManager; private LocationListener locationListener; private SensorManager sensors; private Sensor pressureSensor;
+    /** true enquanto o usuário está nas configurações de localização do sistema */
+    private boolean waitingForLocationSettings=false;
     @Override public void onCreate(Bundle b){super.onCreate(b);getWindow().setStatusBarColor(0xFFF5F1E8);db=new MemoryDatabase(this);editId=getIntent().getLongExtra("id",0);sensors=(SensorManager)getSystemService(SENSOR_SERVICE);pressureSensor=sensors==null?null:sensors.getDefaultSensor(Sensor.TYPE_PRESSURE);build();if(editId!=0)load();else captureLocation();}
     private void build(){
         setContentView(R.layout.activity_editor);
@@ -35,11 +40,16 @@ public class EditorActivity extends Activity implements SensorEventListener {
     private void captureLocation(){if(checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)!=PackageManager.PERMISSION_GRANTED&&checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION)!=PackageManager.PERMISSION_GRANTED){requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION},REQUEST_LOCATION);place.setText("Permita o acesso à localização para anexar o lugar.");return;}readLocation();}
     private void readLocation(){
         locationManager=(LocationManager)getSystemService(LOCATION_SERVICE);
+        // Verifica se os serviços de localização do sistema estão ligados
+        if(!isLocationEnabled()){
+            place.setText("Localização desativada.");
+            showEnableLocationDialog();
+            return;
+        }
         place.setText("Obtendo localização atual…");
         try {
             locationListener=new LocationListener(){
                 @Override public void onLocationChanged(Location location){
-                    // Mantém a tela sincronizada enquanto o usuário ajusta a posição no emulador/GPS.
                     latitude=location.getLatitude();longitude=location.getLongitude();locationName=null;updateMeta();resolvePlaceName(latitude,longitude);
                 }
                 @Override public void onProviderEnabled(String provider){}
@@ -54,8 +64,27 @@ public class EditorActivity extends Activity implements SensorEventListener {
             }
             Location last=latestKnownLocation(locationManager);
             if(last!=null){latitude=last.getLatitude();longitude=last.getLongitude();updateMeta();resolvePlaceName(latitude,longitude);}
-            if(!requested&&last==null)place.setText("Ative a localização do emulador e tente novamente.");
+            if(!requested&&last==null)place.setText("Aguardando sinal de localização…");
         }catch(SecurityException e){place.setText("Sem permissão de localização.");}
+    }
+    /** Retorna true se pelo menos um provider ativo (GPS ou Network) estiver ligado. */
+    private boolean isLocationEnabled(){
+        if(locationManager==null)return false;
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.P){return locationManager.isLocationEnabled();}
+        try{return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)||locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);}catch(Exception e){return false;}
+    }
+    /** Mostra diálogo pedindo para o usuário ativar a localização nas configurações do sistema. */
+    private void showEnableLocationDialog(){
+        new AlertDialog.Builder(this)
+            .setTitle("Localização desativada")
+            .setMessage("Para registrar o local desta memória, ative os serviços de localização do dispositivo.")
+            .setPositiveButton("Ativar localização",(d,w)->{
+                waitingForLocationSettings=true;
+                startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+            })
+            .setNegativeButton("Continuar sem localização",(d,w)->place.setText("Localização não registrada nesta memória."))
+            .setCancelable(false)
+            .show();
     }
     private Location latestKnownLocation(LocationManager lm){
         try{Location best=null;for(String provider:lm.getProviders(true)){Location l=lm.getLastKnownLocation(provider);if(l!=null&&(best==null||l.getTime()>best.getTime()))best=l;}return best;}catch(SecurityException e){return null;}
@@ -63,7 +92,19 @@ public class EditorActivity extends Activity implements SensorEventListener {
     private void stopLocationUpdates(){if(locationManager!=null&&locationListener!=null){try{locationManager.removeUpdates(locationListener);}catch(SecurityException ignored){}locationListener=null;}}
     private void resolvePlaceName(double lat,double lon){PlaceResolver.resolve(this,lat,lon,name->{if(name==null||latitude==null||longitude==null||Math.abs(latitude-lat)>0.00001||Math.abs(longitude-lon)>0.00001)return;locationName=name;updateMeta();if(editId!=0)db.updateLocationName(editId,name);});}
     @Override public void onRequestPermissionsResult(int r,String[] p,int[] g){super.onRequestPermissionsResult(r,p,g);if(r==REQUEST_LOCATION){if(checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)==PackageManager.PERMISSION_GRANTED||checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION)==PackageManager.PERMISSION_GRANTED)readLocation();else place.setText("Localização não autorizada.");}}
-    @Override protected void onResume(){super.onResume();if(editId==0){if(pressureSensor!=null&&sensors!=null)sensors.registerListener(this,pressureSensor,SensorManager.SENSOR_DELAY_NORMAL);else updateMeta();}}
+    @Override protected void onResume(){
+        super.onResume();
+        if(editId==0){
+            if(pressureSensor!=null&&sensors!=null)sensors.registerListener(this,pressureSensor,SensorManager.SENSOR_DELAY_NORMAL);
+            else updateMeta();
+            // Volta das configurações do sistema: tenta obter localização se foi ativada
+            if(waitingForLocationSettings){
+                waitingForLocationSettings=false;
+                if(isLocationEnabled()) readLocation();
+                else place.setText("Localização não registrada nesta memória.");
+            }
+        }
+    }
     @Override protected void onPause(){super.onPause();if(sensors!=null)sensors.unregisterListener(this);stopLocationUpdates();}
     @Override public void onSensorChanged(SensorEvent event){if(event.sensor.getType()!=Sensor.TYPE_PRESSURE)return;pressureHpa=event.values[0];updateMeta();}
     @Override public void onAccuracyChanged(Sensor sensor,int accuracy){}

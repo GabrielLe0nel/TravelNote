@@ -26,7 +26,6 @@
         android:label="TravelNote"
         android:roundIcon="@mipmap/ic_travelnote"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="br.com.travelnote.EditorActivity"
