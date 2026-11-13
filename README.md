@@ -51,10 +51,20 @@ O SQLite armazena título, descrição, URI opcional da foto, latitude, longitud
 
 
 
+
 ## 📥 Download do TravelNote
 
-<a href="https://github.com/GabrielLe0nel/TravelNote/releases/latest">
-  <img src="https://img.shields.io/badge/BAIXAR%20APK-35C759?style=for-the-badge&logo=android&logoColor=white" alt="Baixar APK">
-</a>
+<p align="center">
+  <a href="https://github.com/GabrielLe0nel/TravelNote/releases/latest">
+    <img src="https://img.shields.io/badge/VER%20VERS%C3%95ES-35D777?style=for-the-badge&logo=github&logoColor=black" alt="Ver versões">
+  </a>
+  &nbsp;
+  <a href="https://github.com/GabrielLe0nel/TravelNote/releases/latest/download/app-debug.apk">
+    <img src="https://img.shields.io/badge/BAIXAR%20APK-35D777?style=for-the-badge&logo=android&logoColor=black" alt="Baixar APK diretamente">
+  </a>
+</p>
 
-Clique no botão acima para acessar a versão mais recente do TravelNote e baixar o APK.
+<p align="center">
+  Escolha entre consultar as versões disponíveis ou baixar diretamente o aplicativo.
+</p>
+
